@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/size_10p"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+
+
+<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/size_12p"
+              android:layout_marginRight="@dimen/size_12p"
+
+              android:background="@drawable/shape_white_round4"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/size_10p">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_6p"
+        android:layout_marginTop="@dimen/size_12p"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p">
+
+        <TextView
+            android:id="@+id/title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="包裹   1.5kg   30m³"
+            android:textColor="@color/font_black666"
+            android:textSize="@dimen/font_text_size20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="待接单"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_text_size14"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/size_12p"
+        android:paddingLeft="@dimen/size_12p">
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="送至：重庆市渝中区大坪网点"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_text_size14"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="¥30.00"
+            android:textColor="@color/font_orange_red"
+            android:textSize="@dimen/font_text_size20"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_6p"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:text="今日9点之前取件"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_text_size14"/>
+
+    <View
+        style="@style/dotted_style"
+        android:layout_marginBottom="@dimen/size_10p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p">
+    </View>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/size_12p"
+        android:background="@drawable/re_round_accent4"
+        android:paddingBottom="@dimen/size_8p"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:paddingTop="@dimen/size_8p"
+        android:text="我要加价"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_text_size14"
+        />
+
+</LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginRight="@dimen/size_16p"
+        android:layout_marginLeft="@dimen/size_16p"
+        android:layout_marginTop="-1dp"
+        />
+</LinearLayout>

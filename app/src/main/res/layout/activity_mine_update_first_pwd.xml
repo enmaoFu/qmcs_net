@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"/>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:layout_marginTop="@dimen/size_20p"
+        android:background="@color/white"
+        android:hint="请输入您登记的手机号码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:textColor="@color/font_black666"
+        android:textColorHint="@color/font_hint"
+        android:textSize="@dimen/font_text_size16"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:layout_marginTop="@dimen/size_1p"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/commit_btn_height"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="短信验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_12p"
+            android:textColor="@color/font_black666"
+            android:textColorHint="@color/font_hint"
+            android:textSize="@dimen/font_text_size16"
+            />
+
+        <View
+            android:layout_width="@dimen/size_1p"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size_8p"
+            android:layout_marginTop="@dimen/size_8p"
+            android:background="@color/divier_color"
+            />
+
+        <TextView
+            android:id="@+id/get_code_sms"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textSize="@dimen/font_text_size16"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/commit_btn"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_20p"
+        android:text="下一步"
+        android:id="@+id/tv_commit"
+        android:background="@drawable/shape_commit_gray_btn_bg"
+        />
+
+
+</LinearLayout>

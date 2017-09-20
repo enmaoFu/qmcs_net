@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/size_2p"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:maxLength="12"
+        android:hint="请输入您的登录密码"
+        android:textSize="@dimen/font_text_size16"
+        android:textColorHint="@color/font_hint"
+        />
+    <TextView
+       style="@style/commit_btn"
+       android:id="@+id/tv_next"
+       android:text="下一步"
+       android:layout_marginLeft="@dimen/size_12p"
+       android:layout_marginRight="@dimen/size_12p"
+       android:layout_marginTop="40dp"
+        />
+</LinearLayout>

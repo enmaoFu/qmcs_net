@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#36393E"
+              android:id="@+id/ll_bg"
+              android:layout_height="match_parent">
+    <me.relex.photodraweeview.PhotoDraweeView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:failureImage="@drawable/ic_placeholder"
+        app:failureImageScaleType="fitCenter"
+        app:placeholderImage="@drawable/ic_placeholder"
+        app:placeholderImageScaleType="fitCenter"
+        app:progressBarAutoRotateInterval="1000"
+        app:progressBarImage="@drawable/ic_loading"
+        app:progressBarImageScaleType="centerInside"/>
+</LinearLayout>

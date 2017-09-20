@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <ImageView
+        android:id="@+id/toolbar_hr"
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar_hr"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_12p"
+                android:background="@drawable/shape_white_round4"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:paddingTop="@dimen/size_8p">
+
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="快件码：QMCS 1101 1111 2222 555"
+                    android:textSize="@dimen/font_text_size16"
+                    android:textColor="@color/font_black333"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="验收时间：2017.06.12 10:40:00"
+                    android:layout_below="@+id/code"
+                    android:textSize="@dimen/font_text_size14"
+                    android:textColor="@color/font_gray"
+                    android:paddingTop="@dimen/size_5p"
+                    android:paddingBottom="@dimen/size_5p"
+                    android:layout_marginTop="@dimen/size_5p"/>
+
+                <TextView
+                    android:id="@+id/query_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看详情"
+                    android:textSize="@dimen/font_text_size14"
+                    android:textColor="@color/font_black333"
+                    android:layout_below="@id/code"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/checkmore_arrow_right"
+                    android:drawablePadding="@dimen/size_5p"
+                    android:paddingTop="@dimen/size_5p"
+                    android:paddingBottom="@dimen/size_5p"
+                    android:layout_marginTop="@dimen/size_5p"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/bg_shadow"
+                android:layout_marginTop="-1dp"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/shape_white_round4"
+                android:layout_marginTop="@dimen/size_12p"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:paddingBottom="@dimen/size_12p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="破损详情"
+                    android:layout_marginTop="@dimen/size_8p"
+                    android:layout_marginRight="@dimen/size_12p"
+                    android:layout_marginLeft="@dimen/size_12p"
+                    android:textSize="@dimen/font_text_size16"
+                    android:textColor="@color/font_black333"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_12p"
+                    android:layout_marginRight="@dimen/size_12p">
+
+                    <TextView
+                        android:id="@+id/img_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图片证明"
+                        android:layout_marginTop="@dimen/size_8p"
+                        android:textSize="@dimen/font_text_size14"
+                        android:textColor="@color/font_gray"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:scrollbars="none"
+                        android:layout_marginTop="@dimen/size_8p"
+                        android:layout_below="@+id/img_title">
+
+                        <com.and.yzy.frame.view.linearlistview.LinearListView
+                            android:id="@+id/images"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        </com.and.yzy.frame.view.linearlistview.LinearListView>
+
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_12p"
+                    android:layout_marginRight="@dimen/size_12p">
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="文字描述"
+                        android:layout_marginTop="@dimen/size_8p"
+                        android:textSize="@dimen/font_text_size14"
+                        android:textColor="@color/font_gray"/>
+
+                    <TextView
+                        android:id="@+id/word_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="外包装已被挤压"
+                        android:layout_marginTop="@dimen/size_8p"
+                        android:layout_toRightOf="@+id/text_title"
+                        android:layout_marginLeft="@dimen/size_12p"
+                        android:textSize="@dimen/font_text_size14"
+                        android:textColor="@color/font_black333"/>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/divier_style"
+                    android:layout_marginTop="@dimen/size_5p"
+                    android:layout_marginRight="@dimen/size_12p"
+                    android:layout_marginLeft="@dimen/size_12p"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="接件信息"
+                    android:layout_marginTop="@dimen/size_8p"
+                    android:layout_marginRight="@dimen/size_12p"
+                    android:layout_marginLeft="@dimen/size_12p"
+                    android:textSize="@dimen/font_text_size16"
+                    android:textColor="@color/font_black333"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网点信息"
+                    android:layout_marginTop="@dimen/size_8p"
+                    android:textSize="@dimen/font_text_size14"
+                    android:textColor="@color/font_black333"
+                    android:drawableLeft="@drawable/detail_store"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/font_text_size10"
+                    android:layout_marginRight="@dimen/size_12p"
+                    android:layout_marginLeft="@dimen/size_12p"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/size_8p"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取件网点"
+                        android:textSize="@dimen/font_text_size14"
+                        android:textColor="@color/font_gray"
+                        android:layout_marginLeft="@dimen/size_38p"/>
+
+                    <TextView
+                        android:id="@+id/take_spot_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="重庆市南坪网点"
+                        android:textSize="@dimen/font_text_size14"
+                        android:textColor="@color/font_gray"
+                        android:layout_marginLeft="@dimen/size_18p"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/size_8p"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话"
+                        android:textSize="@dimen/font_text_size14"
+                        android:textColor="@color/font_gray"
+                        android:layout_marginLeft="@dimen/size_38p"/>
+
+                    <TextView
+                        android:id="@+id/take_spot_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="023-56896589"
+                        android:textSize="@dimen/font_text_size14"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/size_8p"
+                        android:drawableRight="@drawable/icon_phone"
+                        android:layout_marginLeft="@dimen/size_18p"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="传送天使信息"
+                        android:layout_marginTop="@dimen/size_8p"
+                        android:textSize="@dimen/font_text_size14"
+                        android:textColor="@color/font_black333"
+                        android:drawableLeft="@drawable/detail_chuansong"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/font_text_size10"
+                        android:layout_marginRight="@dimen/size_12p"
+                        android:layout_marginLeft="@dimen/size_12p"
+                        android:id="@+id/textView3"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/size_8p"
+                        >
+
+                        <TextView
+                            android:id="@+id/angle_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="雷浩"
+                            android:textSize="@dimen/font_text_size14"
+                            android:textColor="@color/font_gray"
+                            android:layout_marginLeft="@dimen/size_38p"/>
+
+                        <TextView
+                            android:id="@+id/angle_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="13456565956"
+                            android:textSize="@dimen/font_text_size14"
+                            android:textColor="@color/colorAccent"
+                            android:gravity="center"
+                            android:drawablePadding="@dimen/size_8p"
+                            android:drawableRight="@drawable/icon_phone"
+                            android:layout_marginLeft="@dimen/size_5p"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/angle_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017.01.02 14:00 接件"
+                        android:textSize="@dimen/font_text_size14"
+                        android:textColor="@color/font_gray"
+                        android:layout_marginLeft="@dimen/size_38p"
+                        android:layout_marginTop="@dimen/size_8p"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/bg_shadow"
+                android:layout_marginTop="-1dp"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginBottom="@dimen/size_12p"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

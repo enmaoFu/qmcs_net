@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_round4"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_8p">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_courier"
+                android:paddingTop="@dimen/size_18p"
+                android:paddingBottom="@dimen/size_18p"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/size_18p"
+                android:paddingBottom="@dimen/size_18p"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/head"
+                android:layout_marginLeft="@dimen/size_18p">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="派件员 王鑫"
+                    android:textColor="@color/font_black333"
+                    android:textSize="@dimen/font_text_size16"/>
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345678921"
+                    android:textSize="@dimen/font_text_size16"
+                    android:textColor="@color/font_gray"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="@dimen/size_10p"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_round4"
+        android:layout_marginTop="@dimen/size_12p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:paddingTop="@dimen/size_8p"
+        android:paddingBottom="@dimen/size_8p">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投递点"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_black333"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/input_spot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_12p"
+            android:paddingTop="@dimen/size_8p"
+            android:paddingBottom="@dimen/size_8p"
+            android:gravity="right"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_black333"
+            android:hint="请输入投递点名称"
+            android:textColorHint="@color/font_gray"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:textCursorDrawable="@null"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_round4"
+        android:layout_marginTop="@dimen/size_12p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:paddingTop="@dimen/size_16p"
+        android:paddingBottom="@dimen/size_16p">
+
+        <TextView
+            android:id="@+id/bj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑短信"
+            android:textColor="@color/font_black333"
+            android:textSize="@dimen/font_text_size16"
+            android:layout_marginLeft="@dimen/size_12p"/>
+
+        <EditText
+            android:id="@+id/input_context"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/bj"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_12p"
+            android:layout_marginTop="@dimen/size_12p"
+            android:hint="请输入短信内容"
+            android:textColorHint="@color/font_gray"
+            android:textColor="@color/font_black666"
+            android:textSize="@dimen/font_text_size16"
+            android:gravity="left"
+            android:padding="0dp"
+            android:background="@null"
+            android:textCursorDrawable="@null"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p" />
+
+    <LinearLayout
+        android:id="@+id/is_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/size_12p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/btn_select_normal"
+            android:layout_gravity="center"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信息输入无误，已妥投至投递点"
+            android:textSize="@dimen/font_text_size14"
+            android:textColor="@color/font_gray"
+            android:layout_marginLeft="@dimen/size_10p"
+            android:paddingTop="@dimen/size_5p"
+            android:paddingBottom="@dimen/size_5p"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/send_sms"
+        style="@style/commit_btn"
+        android:text="发送短信至签收人手机"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <ImageView style="@style/bg_shadow"
+        android:id="@+id/bg_shadow"
+        android:layout_marginTop="-1dp"
+        android:layout_below="@+id/toolbar"></ImageView>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请修改以下信息，确认加价"
+        android:textSize="@dimen/font_text_size15"
+        android:textColor="@color/font_gray"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_20p"
+        android:layout_below="@id/bg_shadow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/msg"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_14p">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_white_round4"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_12p">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="传送员收益："
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_gray"
+                android:layout_centerVertical="true"/>
+
+            <com.biaoyuan.transfernet.view.NumberButton
+                android:id="@+id/add_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+            </com.biaoyuan.transfernet.view.NumberButton>
+
+        </RelativeLayout>
+
+        <ImageView style="@style/bg_shadow"
+            android:layout_marginTop="-1dp"
+            android:layout_below="@+id/toolbar"></ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_white_round4"
+            android:layout_marginTop="@dimen/size_12p"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_12p">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取件时间："
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_gray"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/take_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择时间"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_blacknew"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/post_arrow_down"
+                android:drawablePadding="@dimen/size_5p"
+                android:paddingTop="@dimen/size_10p"
+                android:paddingBottom="@dimen/size_10p"/>
+
+
+        </RelativeLayout>
+
+        <ImageView style="@style/bg_shadow"
+            android:layout_marginTop="-1dp"
+            android:layout_below="@+id/toolbar"></ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_white_round4"
+            android:layout_marginTop="@dimen/size_12p"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_12p">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送达时间："
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_gray"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/send_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择时间"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_blacknew"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/post_arrow_down"
+                android:drawablePadding="@dimen/size_5p"
+                android:paddingTop="@dimen/size_10p"
+                android:paddingBottom="@dimen/size_10p"/>
+
+        </RelativeLayout>
+
+        <ImageView style="@style/bg_shadow"
+            android:layout_marginTop="-1dp"
+            android:layout_below="@+id/toolbar"></ImageView>
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/commit_btn"
+            android:text="确认加价"
+            android:layout_marginTop="@dimen/size_40p"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

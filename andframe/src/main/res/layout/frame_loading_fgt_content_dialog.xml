@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:clickable="false"
+              android:orientation="vertical"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/frame_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:clickable="true">
+
+        <com.and.yzy.frame.view.progressbar.LoadingView
+            android:id="@+id/water_bottle_view"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:loading_renderer="WaterBottleLoadingRenderer"/>
+    </FrameLayout>
+
+
+</LinearLayout>

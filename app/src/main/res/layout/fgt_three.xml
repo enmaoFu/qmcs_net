@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/colorAccent">
+
+        <RadioGroup
+            android:id="@+id/rg_mian"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolbar_size"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_left"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_32p"
+                android:background="@drawable/selector_tab_left"
+                android:button="@null"
+                android:checked="true"
+                android:paddingLeft="@dimen/size_20p"
+                android:paddingRight="@dimen/size_20p"
+                android:text="三方代发"
+                android:textColor="@color/selector_tab_text"
+                android:textSize="@dimen/font_text_size14"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_right"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_32p"
+                android:background="@drawable/selector_tab_right"
+                android:button="@null"
+                android:paddingLeft="@dimen/size_20p"
+                android:paddingRight="@dimen/size_20p"
+                android:text="直送服务"
+                android:textColor="@color/selector_tab_text"
+                android:textSize="@dimen/font_text_size14"
+                />
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <com.and.yzy.frame.view.other.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.and.yzy.frame.view.other.CustomViewPager>
+
+</LinearLayout>
+

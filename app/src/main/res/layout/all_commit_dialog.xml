@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_white_round4"
+              android:gravity="center"
+              android:paddingBottom="@dimen/size_20p"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确认成功"
+            android:textColor="@color/font_black333"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/size_20p"
+            android:src="@drawable/t_popwindows_close"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/t_img_check"
+        />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20p"
+        android:layout_marginRight="@dimen/size_20p"
+        android:layout_marginTop="@dimen/size_20p"
+        android:text="请按要求时间到用户所在地址上门取件"
+        android:textColor="@color/font_black666"
+        />
+
+    <TextView
+        android:id="@+id/tv_commit"
+        style="@style/commit_btn"
+        android:layout_marginLeft="@dimen/size_20p"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/size_25p"
+        android:text="回到首页"
+        />
+
+
+</LinearLayout>

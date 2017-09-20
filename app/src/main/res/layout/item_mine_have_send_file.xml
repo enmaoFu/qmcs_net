@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_round4"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_12p"
+        android:paddingTop="@dimen/size_10p"
+        android:paddingBottom="@dimen/size_10p"
+        android:paddingRight="@dimen/size_12p"
+        android:paddingLeft="@dimen/size_12p">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/size_10p"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="快件码:"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@id/code"
+                android:layout_width="wrap_content"
+                android:text="QMCS234513123"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_orange"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10p"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:text="已派送"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View style="@style/dotted_style"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/size_6p"
+            android:paddingBottom="@dimen/size_6p"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="送至:"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="重庆市渝中区大坪正街万科金城B101"
+                android:singleLine="true"
+                android:textSize="@dimen/font_text_size14"
+                android:layout_marginLeft="@dimen/size_10p"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/success_date"
+            android:layout_width="match_parent"
+            android:text="2017.03.12 12:34:00 成功签收"
+            android:textSize="@dimen/font_text_size14"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="-1dp"/>
+
+</LinearLayout>

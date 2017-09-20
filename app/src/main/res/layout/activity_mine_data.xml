@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/app_bg"
+              android:layout_height="match_parent">
+        <include layout="@layout/toolbar_white_layout"/>
+
+    <LinearLayout
+        android:id="@+id/head_img"
+        android:layout_width="match_parent"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_2p"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="头像修改"
+            android:textColor="@color/font_black666"
+            android:textSize="@dimen/font_text_size16"
+            />
+        <com.facebook.drawee.view.SimpleDraweeView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mine_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/size_12p"
+            app:actualImageScaleType="centerCrop"
+            app:failureImage="@drawable/default_head"
+            app:failureImageScaleType="centerCrop"
+            app:placeholderImage="@drawable/default_head"
+            app:placeholderImageScaleType="centerCrop"
+            app:roundAsCircle="true">
+        </com.facebook.drawee.view.SimpleDraweeView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/go"
+            android:textSize="@dimen/font_text_size16"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_change_phone"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_1p"
+        android:layout_height="@dimen/commit_btn_height">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="手机号码"
+            android:textColor="@color/font_black666"
+            android:textSize="@dimen/font_text_size16"
+            />
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12456435653"
+            android:layout_marginRight="@dimen/size_12p"
+            android:textColor="@color/font_black666"
+            android:textSize="@dimen/font_text_size16"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更改"
+            android:layout_marginRight="@dimen/size_12p"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_text_size16"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:text="密码修改"
+        android:textSize="@dimen/font_text_size16"
+        android:gravity="center_vertical"
+        android:textColor="@color/font_black666"
+        android:paddingLeft="@dimen/size_12p"
+        android:drawableRight="@drawable/go"
+        android:paddingRight="@dimen/size_12p"
+        android:drawablePadding="@dimen/size_10p"
+        android:layout_marginTop="@dimen/size_1p"
+        android:id="@+id/tv_pwd"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:layout_marginTop="@dimen/size_40p"
+        android:textColor="@color/font_orange_red"
+        android:text="退出当前账号"
+        android:textSize="@dimen/font_text_size16"
+        android:gravity="center"
+        android:id="@+id/tv_commit"
+        />
+
+
+</LinearLayout>

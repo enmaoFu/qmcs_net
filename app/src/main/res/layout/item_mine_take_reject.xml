@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_12p"
+    android:layout_marginRight="@dimen/size_12p"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_round4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_12p"
+            android:layout_marginTop="@dimen/size_8p">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="订单编号："
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:text="QMCS234513123"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size14"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            style="@style/divier_style"
+            android:layout_marginTop="@dimen/size_8p"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/size_8p"
+            android:paddingBottom="@dimen/size_8p"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_12p"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/order_weight_size"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="物品信息：10m³   5kg"
+                android:singleLine="true"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_black333"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/order_send_address"
+            android:layout_width="match_parent"
+            android:text="寄件地址：重庆南岸区西郊路"
+            android:textColor="@color/font_black333"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_12p"
+            android:textSize="@dimen/font_text_size16"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/font_text_size16"
+            android:layout_marginTop="@dimen/size_8p"
+            android:text="今日10:00取件"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_12p"
+            android:drawableLeft="@drawable/detail_time"
+            android:drawablePadding="@dimen/size_5p"
+            android:textColor="@color/font_hint"
+            android:layout_height="wrap_content"/>
+
+        <View
+            style="@style/divier_style"
+            android:layout_marginTop="@dimen/size_8p"
+            />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_text_size16"
+            android:text="违禁品拒收"
+            android:textColor="@color/font_orange_red"
+            android:paddingTop="@dimen/size_8p"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_12p"
+            android:paddingBottom="@dimen/size_8p"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginLeft="@dimen/size_4p"
+        android:layout_marginRight="@dimen/size_4p"
+        android:layout_marginTop="-1dp"
+        />
+</LinearLayout>

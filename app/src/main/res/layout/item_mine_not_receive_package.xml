@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_round4"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_10p"
+        android:paddingBottom="@dimen/size_10p"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:paddingTop="@dimen/size_12p">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/size_10p"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:text="传送开始："
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+            <TextView
+                android:id="@+id/start_date"
+                android:layout_width="wrap_content"
+                android:text="2017.05.04 12:00"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:text="待接件"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            style="@style/dotted_style"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/size_6p"
+            android:paddingBottom="@dimen/size_6p"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="寄往:"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="重庆市渝中区大坪正街网科技处B01"
+                android:singleLine="true"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10p"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/angle"
+            android:layout_width="match_parent"
+            android:text="传送天使雷浩已接件"
+            android:textSize="@dimen/font_text_size14"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="-1dp"
+        />
+</LinearLayout>

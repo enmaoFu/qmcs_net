@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.amap.api.navi.AMapNaviView
+        android:id="@+id/navi_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#525252"
+        android:layout_height="@dimen/toolbar_size">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/nav_back"
+            android:id="@+id/img_return"
+            android:paddingRight="@dimen/size_20p"
+            android:paddingLeft="@dimen/size_12p"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_12p"
+            android:textColor="@color/white"
+            android:text="高德地图>>"
+            android:id="@+id/tv_go"
+            android:textSize="@dimen/size_16p"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

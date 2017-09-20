@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <View
+        style="@style/divier_style">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/size_6p">
+
+        <TextView
+            android:id="@+id/title_spot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重庆市南岸区网点"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_12p"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_gray"
+            android:layout_marginTop="@dimen/size_8p"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45p"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/size_8p"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_12p">
+
+            <EditText
+                android:id="@+id/msg"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="12345678910"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"
+                android:padding="0dp"
+                android:background="@null"
+                android:focusable="false"
+                android:maxLength="11"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/but"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="编辑"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/icon_edit"
+                android:drawablePadding="@dimen/size_5p"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"></ListView>
+
+</LinearLayout>

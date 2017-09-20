@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"/>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_12p"
+                android:background="@drawable/shape_white_round4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_msg_left"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/size_10p"
+                    android:paddingLeft="@dimen/size_12p"
+                    android:paddingRight="@dimen/size_12p"
+                    android:paddingTop="@dimen/size_10p">
+
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="07"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="五月"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_text_size20"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_12p"
+                    android:layout_marginRight="@dimen/size_12p"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发件网点"
+                            android:textColor="@color/font_black333"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_send_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_12p"
+                            android:singleLine="true"
+                            android:text="重庆渝中区大坪网点重庆渝中区大坪网点"
+                            android:textColor="@color/font_gray"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="送达网点"
+                            android:textColor="@color/font_black333"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_receive_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_12p"
+                            android:singleLine="true"
+                            android:text="重庆渝中区大坪网点"
+                            android:textColor="@color/font_gray"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/bg_shadow"
+                android:layout_marginLeft="@dimen/size_16p"
+                android:layout_marginRight="@dimen/size_16p"
+                android:layout_marginTop="-1dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_12p"
+                android:background="@drawable/shape_white_round4"
+                android:orientation="vertical"
+                android:padding="@dimen/size_12p">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="包裹大小"
+                        android:textColor="@color/font_black333"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_12p"
+                        android:text="30m³     50kg"
+                        android:textColor="@color/font_gray"
+                        />
+
+                </LinearLayout>
+
+
+                <View
+                    style="@style/divier_style"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/size_12p"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_12p"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="包裹图片"
+                        android:textColor="@color/font_black333"
+                        />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_12p"
+                        android:background="@color/white"
+                        android:scrollbars="none">
+
+                        <com.and.yzy.frame.view.linearlistview.LinearListView
+                            android:id="@+id/lv_pic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        </com.and.yzy.frame.view.linearlistview.LinearListView>
+
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+                <View
+                    style="@style/divier_style"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/size_12p"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_12p">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="打包码"
+                        android:textColor="@color/font_black333"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_25p"
+                        android:text="QMCS 2354 4543 4545"
+                        android:textColor="@color/colorAccent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5p">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="此包裹共含"
+                        android:textColor="@color/font_gray"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="5个"
+                        android:id="@+id/tv_number"
+                        android:textColor="@color/font_orange_red"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="快件"
+                        android:textColor="@color/font_gray"
+                        />
+                </LinearLayout>
+
+
+                <com.and.yzy.frame.view.listview.ListViewForScrollView
+                    android:id="@id/lv_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_12p"
+                    android:divider="@color/divier_color"
+                    android:dividerHeight="0.5dp">
+
+                </com.and.yzy.frame.view.listview.ListViewForScrollView>
+
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/bg_shadow"
+                android:layout_marginLeft="@dimen/size_16p"
+                android:layout_marginRight="@dimen/size_16p"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40p"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/size_12p"
+        android:id="@+id/Rl_commit"
+        android:layout_height="50dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/btn_progress"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:id="@+id/tv_progress"
+            android:textSize="@dimen/size_16p"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_send_send_round"
+    android:layout_marginLeft="@dimen/size_12p"
+    android:layout_marginRight="@dimen/size_12p"
+    android:layout_marginTop="@dimen/size_12p">
+
+    <TextView
+        android:id="@+id/collect_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发件网点：渝中区大坪网点"
+        android:textSize="@dimen/font_text_size16"
+        android:textColor="@color/font_black666"
+        android:paddingTop="@dimen/size_12p"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingBottom="@dimen/size_12p"/>
+
+</RelativeLayout>

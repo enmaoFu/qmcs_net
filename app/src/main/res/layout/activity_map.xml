@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.amap.api.maps.MapView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:background="#CCffffff"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img_drive"
+                android:text="驾车"
+                android:id="@+id/tv_drive"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_text_size16"
+                android:drawablePadding="@dimen/size_5p"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img_walk"
+                android:text="步行"
+                android:layout_marginRight="@dimen/size_50p"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/tv_walk"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_text_size16"
+                android:drawablePadding="@dimen/size_5p"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img_riding"
+                android:text="骑行"
+                android:id="@+id/tv_riding"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_text_size16"
+                android:drawablePadding="@dimen/size_5p"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/commit_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/size_12p"
+            android:text="导航"
+            android:id="@+id/btn_commit"
+           />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

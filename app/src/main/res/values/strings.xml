@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">全民网点</string>
+    <string name="parseColor">#CCCCCC</string>
+    <string name="bgColor">#efeff4</string>
+    <string name="pwd_tip">登录密码至少8位</string>
+    <string name="r_pwd_tip">请再次输入的密码至少8位</string>
+    <string name="pwd_not_same">两次密码不一致</string>
+    <string name="input_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="input_digits_QMCS">0123456789QMCS</string>
+    <string name="input_digits_QMWD">0123456789QMWD</string>
+    <string name="no_order">该订单不是您确认，请勿操作</string>
+
+</resources>

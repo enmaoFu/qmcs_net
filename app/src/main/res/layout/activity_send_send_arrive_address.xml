@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10p"
+        android:background="@color/white"
+        android:padding="@dimen/size_12p"
+        android:text="共有12个快件需要发往该网点"
+        android:textColor="@color/font_new"
+        android:textSize="@dimen/font_text_size16"
+        />
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/app_bg"
+
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+    <View
+        android:id="@+id/divier_style"
+        style="@style/divier_style"
+        android:layout_above="@+id/bom"></View>
+
+    <RelativeLayout
+        android:id="@+id/bom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50p"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/size_10p"
+            android:paddingTop="@dimen/size_10p">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="@dimen/size_20p"
+                android:layout_height="@dimen/size_20p"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:background="@drawable/radio_group_selector"
+                android:button="@null"
+                android:clickable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_5p"
+                android:layout_toRightOf="@+id/check"
+                android:text="全选"
+                android:textColor="@color/font_new"
+                android:textSize="@dimen/font_text_size16"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/release"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#30acf4"
+            android:gravity="center"
+            android:text="去发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_size16"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

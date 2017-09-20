@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_bg"
+              android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#525252"
+        android:layout_height="@dimen/toolbar_size">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/nav_back"
+            android:id="@+id/img_return"
+            android:paddingRight="@dimen/size_20p"
+            android:paddingLeft="@dimen/size_12p"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_12p"
+           android:textColor="@color/white"
+            android:text="无法识别？"
+            android:id="@+id/tv_go_input"
+            android:textSize="@dimen/size_16p"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@android:color/transparent"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/colorAccent"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_isTipTextBelowRect="true"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_qrCodeTipText=""
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="@color/colorAccent"
+        app:qrcv_scanLineSize="1dp"
+        app:qrcv_tipTextColor="@color/white"
+        app:qrcv_tipTextMargin="20dp"
+        app:qrcv_tipTextSize="16sp"
+        app:qrcv_toolbarHeight="50dp"
+        app:qrcv_topOffset="100dp"/>
+</LinearLayout>

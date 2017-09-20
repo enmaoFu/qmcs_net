@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.biaoyuan.transfernet"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="20170816"
+          android:versionName="2.0.0"
+    >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+
+    <!-- 高德地图 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- QQ SDK2.1新增获取用户位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- 微信 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.login.FirstAty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--====================主界面==================-->
+        <activity android:name=".ui.MainAty"></activity>
+        <activity android:name=".ui.AllScanAty"></activity>
+        <activity android:name=".ui.InputCodeAty"></activity>
+        <activity android:name=".ui.ShowBigImgaeAty"></activity>
+
+        <!--====================登录界面==================-->
+        <activity android:name=".ui.login.ForgetPasswordAty"></activity>
+        <activity android:name=".ui.login.ResetPasswordActvity"></activity>
+        <activity android:name=".ui.login.FindPasswordActvity"></activity>
+        <activity
+            android:name=".ui.login.LoginAty"
+            android:launchMode="singleTask"
+            ></activity>
+
+        <activity
+            android:name=".ui.NavigationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+
+        <service android:name="com.amap.api.location.APSService"/>
+
+
+        <!--====================我的==================-->
+        <activity android:name=".ui.mine.MineSettingActivity"></activity>
+        <activity android:name=".ui.mine.MineDotSettingActivity"></activity>
+        <activity
+            android:name=".ui.mine.MineDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            ></activity>
+        <activity android:name=".ui.mine.MineUpdatePhoneLoginAty"></activity>
+        <activity android:name=".ui.mine.MineUpdatePwdFristAty"></activity>
+        <activity android:name=".ui.mine.MineUpdatePwdTwoAty"></activity>
+        <activity android:name=".ui.mine.MineThreeSendActivity"></activity>
+        <activity android:name=".ui.mine.MineTakeAty"></activity>
+        <activity android:name=".ui.mine.MineNotReceivePackageAty"></activity>
+        <activity android:name=".ui.mine.MineSendPackageActivity"></activity>
+        <activity android:name=".ui.mine.MineHaveSendFileAty"></activity>
+        <activity android:name=".ui.mine.MineExceptionActivity"></activity>
+        <activity android:name=".ui.mine.MineTakeRejectDetailsActivity"></activity>
+        <activity android:name=".ui.mine.MineTakeOuttimeDetailsActivity"></activity>
+        <activity android:name=".ui.mine.MineSendOuttimeDetailsActivity"></activity>
+        <activity android:name=".ui.mine.MineLoseWormDetailsActivity"></activity>
+        <activity android:name=".ui.mine.MineSendPackageDetailAty"></activity>
+        <activity android:name=".ui.mine.MineCustomerEvaluateActivity"></activity>
+        <activity android:name=".ui.mine.MineCustomerEvaluateDetailsActivity"></activity>
+        <activity android:name=".ui.mine.MineSendPackageDateilsTwoActivity"></activity>
+        <activity android:name=".ui.mine.MineHaveSendFileDetailsActivity"></activity>
+        <activity android:name=".ui.mine.MineHaveSendFileDetailsTwoActivity"></activity>
+        <activity android:name=".ui.mine.MineSendThreeDetailsActivity"></activity>
+        <activity android:name=".ui.mine.MineThreeSendDetailsToActivity"></activity>
+        <activity android:name=".ui.mine.MineFeedbackActivity"></activity>
+        <activity android:name=".ui.mine.MineLoseWormDamageDetailsActivity"></activity>
+        <activity android:name=".ui.mine.UpdataPhoneOneActivity"></activity>
+        <activity android:name=".ui.mine.UpdataPhoneTwoActivity"></activity>
+        <activity android:name=".ui.mine.MineTakeCancleDetalseActivity"></activity>
+        <activity android:name=".ui.mine.MineAboutWeActivity"></activity>
+
+        <activity android:name=".ui.WebViewActivity"/>
+        <!--====================发送网点 取件==================-->
+        <activity android:name=".ui.send.SendTakeFgt.SendTakeItemDetailsActivity"></activity>
+        <activity android:name=".ui.send.SendTakeFgt.SendTakeConfirmActivity"></activity>
+        <activity android:name=".ui.send.SendMessageActivity"></activity>
+        <activity android:name=".ui.send.SendNetAty"></activity>
+        <activity
+            android:name=".ui.send.SendTakeFgt.SendTakeRefuseReceiveActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            ></activity>
+        <activity android:name=".ui.send.SendTakeFgt.SendTakeAddPriceActivity"></activity>
+        <activity android:name=".ui.send.SendTakeFgt.SendMapAty"></activity>
+
+        <!--====================发送网点 发布==================-->
+        <activity android:name=".ui.send.SendSendFgt.SendSendArriveAddressActivity"></activity>
+        <activity android:name=".ui.send.SendSendFgt.SendSendConfirmActivity"></activity>
+        <activity android:name=".ui.send.SendSendFgt.SendSendSuccessActivity"></activity>
+        <activity android:name=".ui.send.SendSealFgt.SendSealAddPriceActivity"></activity>
+
+        <!--====================发送网点 封包==================-->
+        <activity android:name=".ui.send.SendSealFgt.SendSealReceivingOrdersActivity"></activity>
+        <activity
+            android:name=".ui.send.SendSealFgt.SendSealPackingScanningActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            ></activity>
+
+        <!--====================送达网点 代送快件==================-->
+        <!--    <activity android:name=".ui.receive.ReceiveWaitSendPackageActivity"></activity>-->
+
+        <activity
+            android:name=".ui.receive.TestErrorAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            ></activity>
+
+        <activity android:name=".ui.receive.TestDetailAty"></activity>
+        <activity
+            android:name=".ui.receive.ReceiveWaitSendRefuseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            ></activity>
+        <activity android:name=".ui.receive.ReceiveWaitSendDeliveryActivity"></activity>
+        <activity android:name=".ui.receive.ReceiveWaitSendPackageActivity"></activity>
+
+
+        <!--====================第三方代发==================-->
+        <activity android:name=".ui.Three.ThreeNotSendDetailsActivity"></activity>
+        <activity android:name=".ui.Three.ThreeSendDetailsActivity"></activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.biaoyuan.transfernet.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="89378497ed394f4fb50853694307fe74"/>
+
+        <!-- 极光推送 -->
+        <!-- 自定义的广播接收器-->
+        <receiver
+            android:name="com.biaoyuan.transfernet.receiver.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <!--Required 用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <!--Required 用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <!--Required 用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <!--Required 用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.biaoyuan.transfernet"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

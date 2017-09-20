@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_layout"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_20p">
+
+            <TextView
+                android:id="@+id/comfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认成功"
+                android:drawableLeft="@drawable/icon_home"
+                android:drawablePadding="@dimen/size_10p"
+                android:gravity="center"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请等待传送员接单"
+                android:layout_below="@+id/comfirm"
+                android:layout_marginTop="@dimen/size_12p"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="如长时间无人接单，您可适当加价"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="@dimen/size_12p"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_20p"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

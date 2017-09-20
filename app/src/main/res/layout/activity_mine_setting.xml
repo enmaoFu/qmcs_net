@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <View
+        style="@style/divier_style"
+        android:layout_marginTop="@dimen/size_20p">
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:background="@drawable/normal_white_pressed_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新快件自动语音播报"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_black333"/>
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/mine_swc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_12p"
+            app:sb_uncheck_color="@color/gray"
+            app:sb_checked_color="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/divier_style" >
+    </View>
+
+    <View
+        style="@style/divier_style"
+        android:layout_marginTop="@dimen/size_20p">
+    </View>
+
+    <TextView
+        android:id="@+id/dot_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:text="网点联系电话设置"
+        android:textSize="@dimen/font_text_size16"
+        android:textColor="@color/font_black333"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:drawableRight="@drawable/go"
+        android:paddingRight="@dimen/size_12p"/>
+
+    <View
+        style="@style/divier_style" >
+    </View>
+    <TextView
+        android:id="@+id/about_we"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:text="关于我们"
+        android:textSize="@dimen/font_text_size16"
+        android:textColor="@color/font_black333"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:drawableRight="@drawable/go"
+        android:paddingRight="@dimen/size_12p"/>
+
+    <View
+        style="@style/divier_style" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:id="@+id/rl_update"
+        android:background="@drawable/normal_white_pressed_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检测更新"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_black333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_12p"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v2.0"
+            android:drawablePadding="5dp"
+            android:id="@+id/tv_version"
+            android:textSize="@dimen/font_text_size16"
+            android:drawableRight="@drawable/go"
+            android:textColor="@color/font_gray"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_12p"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/divier_style" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commit_btn_height"
+        android:id="@+id/rl_clear"
+        android:background="@drawable/normal_white_pressed_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除缓存"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_black333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_12p"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.23M"
+            android:id="@+id/tv_size"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_gray"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_12p"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/divier_style" >
+    </View>
+
+</LinearLayout>

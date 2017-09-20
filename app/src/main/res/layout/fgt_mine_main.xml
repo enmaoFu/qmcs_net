@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/nav_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size_10p">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/mine_img"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="@dimen/font_text_size16"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginTop="30dp"
+            app:actualImageScaleType="centerCrop"
+            app:failureImage="@drawable/mine_avatar"
+            app:failureImageScaleType="centerCrop"
+            app:placeholderImage="@drawable/mine_avatar"
+            app:placeholderImageScaleType="centerCrop"
+            app:roundAsCircle="true">
+        </com.facebook.drawee.view.SimpleDraweeView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_20p"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/mine_img"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_10p"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mine_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123*****896"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_text_size20"/>
+
+                    <TextView
+                        android:id="@+id/mine_spot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_2p"
+                        android:singleLine="true"
+                        android:text="南岸区网点南岸区南岸区网点南岸区南岸区网点南岸区"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_text_size12"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_12p"
+                    android:src="@drawable/nav_arrow_right"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5p">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户总余额："
+                    android:textColor="#e9f7ff"
+                    android:textSize="@dimen/font_text_size12"/>
+
+                <TextView
+                    android:id="@+id/mine_ye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥30.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_text_size16"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/mine_login_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_marginTop="@dimen/size_5p"
+            android:text="上次登录时间：2017.04.15  17:09"
+            android:textColor="#e9f7ff"
+            android:textSize="@dimen/font_text_size12"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_take"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50p"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/list_pickup"
+                android:drawablePadding="@dimen/size_14p"
+                android:drawableRight="@drawable/go"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:text="我的取件"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <TextView
+                android:id="@+id/tv_send_package"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50p"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/list_send"
+                android:drawablePadding="@dimen/size_14p"
+                android:drawableRight="@drawable/go"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:text="发出包裹"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <View
+                style="@style/divier_style"
+                android:layout_marginTop="@dimen/size_10p">
+            </View>
+
+            <TextView
+                android:id="@+id/tv_not_receive_package"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50p"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/list_ontheway"
+                android:drawablePadding="@dimen/size_14p"
+                android:drawableRight="@drawable/go"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:text="待收包裹"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <TextView
+                android:id="@+id/tv_have_send_file"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50p"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/list_sign"
+                android:drawablePadding="@dimen/size_14p"
+                android:drawableRight="@drawable/go"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:text="签收快件"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50p"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/list_transfer"
+                android:drawablePadding="@dimen/size_14p"
+                android:drawableRight="@drawable/go"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:text="三方代发快件"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <TextView
+                android:id="@+id/tv_exception_file"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50p"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/list_hint"
+                android:drawablePadding="@dimen/size_14p"
+                android:drawableRight="@drawable/go"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:text="异常快件"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <TextView
+                android:id="@+id/tv_customer_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50p"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/list_evaluate"
+                android:drawablePadding="@dimen/size_14p"
+                android:drawableRight="@drawable/go"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:text="客户评价"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <View
+                style="@style/divier_style"
+                android:layout_marginTop="@dimen/size_10p">
+            </View>
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50p"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/list_opinion"
+                android:drawablePadding="@dimen/size_14p"
+                android:drawableRight="@drawable/go"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:text="意见反馈"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <TextView
+                android:id="@+id/mine_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50p"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:drawableLeft="@drawable/list_set"
+                android:drawablePadding="@dimen/size_14p"
+                android:drawableRight="@drawable/go"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:text="设置"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <View
+                style="@style/divier_style">
+            </View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40p">
+            </View>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:text="全部网点"
+        android:textSize="@dimen/font_text_size16"
+        android:textColor="@color/font_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"/>
+
+    <View
+       style="@style/divier_style"></View>
+
+</LinearLayout>

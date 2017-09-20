@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_12p"
+    android:layout_marginRight="@dimen/size_12p"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_round4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame_white_round_bg"
+            android:paddingBottom="@dimen/size_12p">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/evaluate_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:actualImageScaleType="centerCrop"
+                app:failureImage="@drawable/evaluate_avatar"
+                app:failureImageScaleType="centerCrop"
+                app:placeholderImage="@drawable/evaluate_avatar"
+                app:placeholderImageScaleType="centerCrop"
+                app:roundAsCircle="true"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_12p">
+            </com.facebook.drawee.view.SimpleDraweeView>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="136****1457"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/font_gray"
+                android:layout_toRightOf="@+id/evaluate_img"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_12p"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017.01.02"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/font_black333"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_12p"/>
+
+            <am.widget.drawableratingbar.DrawableRatingBar
+                android:id="@+id/ratingbar"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_toRightOf="@+id/evaluate_img"
+                android:layout_marginTop="@dimen/size_8p"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginRight="@dimen/size_12p"/>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingbar"
+                android:layout_toRightOf="@+id/evaluate_img"
+                android:layout_marginRight="@dimen/size_12p"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_8p"
+                android:text="此用户没有填写评价阿萨德撒多啊实打实大所多撒啊实打实大所多"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/font_black333"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看详情"
+                android:layout_below="@+id/content"
+                android:layout_marginTop="@dimen/size_8p"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_12p"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/colorAccent"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginLeft="@dimen/size_4p"
+        android:layout_marginRight="@dimen/size_4p"
+        android:layout_marginTop="-1dp"
+        />
+</LinearLayout>

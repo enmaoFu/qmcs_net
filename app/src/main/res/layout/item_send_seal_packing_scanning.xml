@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+     android:id="@+id/rl_data"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/size_14p">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/size_16p"
+        android:layout_height="@dimen/size_16p"
+        android:src="@drawable/select_dot"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QMCS3  583474  08 8749"
+        android:textSize="@dimen/font_text_size16"
+        android:layout_marginLeft="@dimen/size_10p"
+        android:textColor="@color/font_black666"
+        android:layout_toRightOf="@+id/img"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:textColor="@color/font_gray"
+        android:drawableLeft="@drawable/icon_trash"
+        android:drawablePadding="@dimen/size_5p"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/size_14p"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="@dimen/size_5p"
+        android:paddingBottom="@dimen/size_5p"/>
+    <View
+        style="@style/divier_style"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
+</LinearLayout>

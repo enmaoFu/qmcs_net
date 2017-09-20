@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_12p"
+    android:layout_marginRight="@dimen/size_12p"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_round4"
+        android:paddingRight="@dimen/size_12p"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingBottom="@dimen/size_10p">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10p"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="快件码"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"
+                />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QMCS 2222 5697 5267"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size18"
+                android:layout_marginLeft="@dimen/size_3p"/>
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/dotted_style"
+            android:layout_marginBottom="@dimen/size_10p"
+            android:layout_marginTop="@dimen/size_10p">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="寄往："
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重庆市渝中区大坪万科金城B01"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_marginLeft="@dimen/size_3p"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_10p">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="收件人："
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张帆"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_marginLeft="@dimen/size_3p"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/size_10p"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_5p"
+                android:gravity="center_vertical"
+                android:text="验收成功："
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_5p"
+                android:gravity="center_vertical"
+                android:text="2017.05.04 12:40"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_marginLeft="@dimen/size_3p"/>
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/dotted_style"
+            android:layout_marginBottom="@dimen/size_10p"
+            android:layout_marginTop="@dimen/size_10p">
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/re_round_accent4"
+                android:paddingBottom="@dimen/size_10p"
+                android:paddingLeft="@dimen/size_12p"
+                android:paddingRight="@dimen/size_12p"
+                android:paddingTop="@dimen/size_10p"
+                android:text="网点确认"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginLeft="@dimen/size_4p"
+        android:layout_marginRight="@dimen/size_4p"
+        android:layout_marginTop="-1dp"
+        />
+</LinearLayout>

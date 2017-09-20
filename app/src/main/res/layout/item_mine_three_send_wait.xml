@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_12p"
+    android:layout_marginRight="@dimen/size_12p"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_round4"
+        android:paddingRight="@dimen/size_12p"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingBottom="@dimen/size_10p">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/size_6p"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10p">
+            <TextView
+                android:id="@+id/kd"
+                android:layout_width="80dp"
+                android:text="申通快递:"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_black333"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="QMCS234513123"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            style="@style/divier_style"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/size_6p"
+            android:paddingTop="@dimen/size_6p"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="寄往:"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="重庆南坪街道重庆南坪"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_marginLeft="@dimen/size_10p"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/size_6p"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="发出时间:"
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:text="2017.03.02 20:34"
+                android:textSize="@dimen/font_text_size14"
+                android:layout_marginLeft="@dimen/size_10p"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:text="快件已到达重庆转运中心"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_text_size14"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            style="@style/divier_style"
+            android:layout_marginTop="@dimen/size_6p"/>
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/re_round_accent4"
+            android:paddingBottom="@dimen/size_8p"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingRight="@dimen/size_12p"
+            android:paddingTop="@dimen/size_8p"
+            android:text="查看物流"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/size_6p"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginLeft="@dimen/size_4p"
+        android:layout_marginRight="@dimen/size_4p"
+        android:layout_marginTop="-1dp"
+        />
+</LinearLayout>

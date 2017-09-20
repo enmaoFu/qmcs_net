@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_12p"
+        android:background="@drawable/send_take_details_lin_round">
+
+        <RelativeLayout
+            android:id="@+id/left_img"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@drawable/send_take_details_lin_round1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/airplane"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/left_img"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/send_addrese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发件网点"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_new"
+                android:layout_marginLeft="@dimen/size_22p"/>
+
+            <TextView
+                android:id="@+id/send_spot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重庆市南坪网点"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_gray"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_toRightOf="@+id/send_addrese"
+                android:maxEms="9"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/arrive_addrese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到达网点"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_new"
+                android:layout_marginLeft="@dimen/size_22p"
+                android:layout_marginTop="@dimen/size_12p"
+                android:layout_below="@id/send_addrese"/>
+
+            <TextView
+                android:id="@+id/receive_spot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重庆市江北网点"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_gray"
+                android:layout_marginLeft="@dimen/size_12p"
+                android:layout_marginTop="@dimen/size_12p"
+                android:layout_toRightOf="@+id/arrive_addrese"
+                android:layout_below="@id/send_addrese"
+                android:maxEms="9"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_12p"
+        android:background="@drawable/send_take_details_lin_round">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/size_2p"
+            android:layout_height="match_parent"
+            android:background="@color/app_bg"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/size_12p"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/view"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="包裹重量"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_centerHorizontal="true"/>
+
+            <com.biaoyuan.transfernet.view.NumberButton
+                android:id="@+id/nb_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weight"
+                android:layout_centerHorizontal="true">
+
+            </com.biaoyuan.transfernet.view.NumberButton>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="包裹体积"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_centerHorizontal="true"/>
+
+            <com.biaoyuan.transfernet.view.NumberButton
+                android:id="@+id/nb_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/volume"
+                android:layout_centerHorizontal="true">
+
+            </com.biaoyuan.transfernet.view.NumberButton>
+
+            <!--<RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/volume"
+                android:layout_marginTop="@dimen/size_5p">
+
+                <ImageView
+                    android:id="@+id/volume_reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_home"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/volume_number"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="25m³"
+                    android:layout_toRightOf="@+id/volume_reduce"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/size_10p"/>
+
+                <ImageView
+                    android:id="@+id/volume_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_home"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/volume_number"
+                    android:layout_marginLeft="@dimen/size_10p"/>
+
+            </RelativeLayout>-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_2p"
+        android:background="@drawable/send_take_details_lin_round">
+
+        <View
+            android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/take_date_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/strut"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/take_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取件时间"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/take_date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_5p"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/take_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/take_date"
+                    android:text="请选择时间"
+                    android:textSize="@dimen/font_text_size16"
+                    android:textColor="@color/font_new"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/post_arrow_down"
+                    android:layout_marginLeft="@dimen/size_10p"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/send_date_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/strut"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/send_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送达时间"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/send_date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_5p"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/send_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/take_date"
+                    android:text="请选择时间"
+                    android:textSize="@dimen/font_text_size16"
+                    android:textColor="@color/font_new"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/post_arrow_down"
+                    android:layout_marginLeft="@dimen/size_10p"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_2p"
+        android:background="@drawable/send_take_details_lin_round">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="传送员收益："
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_black666"
+            android:layout_marginLeft="@dimen/size_12p"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/setting_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请自行设定"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_gray"
+            android:drawableRight="@drawable/post_arrow_right"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/size_12p"
+            android:layout_marginRight="@dimen/size_10p"
+            android:paddingTop="@dimen/size_10p"
+            android:paddingBottom="@dimen/size_10p"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/send_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_20p"
+        android:background="@drawable/send_take_details_text_round"
+        android:text="确认发布"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_text_size16"
+        android:gravity="center"/>
+
+</LinearLayout>

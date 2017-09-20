@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        />
+
+    <EditText
+        android:id="@+id/input_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50p"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/size_20p"
+        android:hint="请输入您的登录密码"
+        android:textColorHint="@color/font_hint"
+        android:textSize="@dimen/font_text_size16"
+        android:paddingLeft="@dimen/size_12p"
+        android:maxLength="18"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/font_black333"/>
+
+    <TextView
+        style="@style/commit_btn"
+        android:background="@drawable/shape_commit_gray_btn_bg"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:text="下一步"
+        android:id="@+id/tv_commit"
+        />
+
+</LinearLayout>

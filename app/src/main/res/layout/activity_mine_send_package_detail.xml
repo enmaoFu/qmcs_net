@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white_layout"/>
+
+    <ImageView style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        android:layout_below="@+id/toolbar"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/size_4p"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/font_text_size12"
+                android:paddingRight="@dimen/font_text_size12"
+                >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="传送天使信息："
+                    android:textColor="@color/font_black333"
+                    android:textSize="@dimen/font_text_size16"
+                    />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="雷浩"
+                    android:textColor="@color/font_gray"
+                    />-->
+                <TextView
+                    android:id="@+id/angel_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(13458569876)"
+                    android:textColor="@color/text_csts"
+                    android:layout_marginLeft="@dimen/size_5p"
+                    android:drawableRight="@drawable/icon_phone"
+                    android:drawablePadding="@dimen/size_5p"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <View
+              style="@style/divier_style"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/font_text_size12"
+                android:paddingRight="@dimen/font_text_size12"
+                android:paddingTop="@dimen/size_12p"
+                android:paddingBottom="@dimen/size_12p"
+                >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="送达网点信息："
+                    android:textColor="@color/font_black333"
+                    android:textSize="@dimen/font_text_size16"
+                    />
+
+                <TextView
+                    android:id="@+id/fd_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重庆市九龙坡区三峡广场正街总网点撒打算"
+                    android:textColor="@color/font_gray"
+                    android:enabled="true"
+                    android:layout_toRightOf="@+id/title"
+                    />
+
+                <TextView
+                    android:id="@+id/fd_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(13458569876)"
+                    android:textColor="@color/text_csts"
+                    android:drawableRight="@drawable/icon_phone"
+                    android:drawablePadding="@dimen/size_5p"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/fd_msg"
+                    android:layout_toRightOf="@+id/title"
+                    android:layout_marginTop="@dimen/size_5p"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/size_4p"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/font_text_size12"
+                android:paddingRight="@dimen/font_text_size12"
+                >
+
+                <TextView
+                    android:id="@+id/db_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="打包码：QMCS 1002 1103"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_text_size16"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/query_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看货物详情"
+                    android:textColor="@color/font_black333"
+                    android:layout_marginLeft="@dimen/size_5p"
+                    android:drawableRight="@drawable/checkmore_arrow_right"
+                    android:drawablePadding="@dimen/size_5p"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="@dimen/size_5p"
+                    android:paddingBottom="@dimen/size_5p"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/divier_style"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="@dimen/size_12p"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传送信息"
+                    android:textSize="@dimen/font_text_size16"
+                    android:textColor="@color/font_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/img_logistic"
+                    android:layout_below="@id/details"
+                    android:layout_marginTop="@dimen/size_12p">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_40p"
+                        android:layout_centerVertical="true">
+
+                        <LinearLayout
+                            android:id="@+id/left_spot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/size_12p">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/logistic_locate"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/left_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="发送啊实打实多大神"
+                                android:textSize="@dimen/font_text_size12"
+                                android:textColor="@color/font_gray"
+                                android:layout_gravity="center"
+                                android:maxEms="6"
+                                android:singleLine="true"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_2p"
+                            android:background="@color/font_orange_red"
+                            android:layout_toRightOf="@+id/left_spot"
+                            android:layout_toLeftOf="@+id/right_spot"
+                            android:layout_centerVertical="true"></View>
+
+
+                        <LinearLayout
+                            android:id="@+id/right_spot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/size_12p">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/logistic_locate"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/right_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="发送"
+                                android:textSize="@dimen/font_text_size12"
+                                android:textColor="@color/font_gray"
+                                android:layout_gravity="center"
+                                android:maxEms="6"
+                                android:singleLine="true"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <com.and.yzy.frame.view.listview.ListViewForScrollView
+                android:layout_width="match_parent"
+                android:id="@+id/lv_data"
+                android:divider="@null"
+                android:padding="@dimen/size_12p"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+            </com.and.yzy.frame.view.listview.ListViewForScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

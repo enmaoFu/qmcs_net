@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_round4"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_10p"
+        android:paddingBottom="@dimen/size_10p"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p"
+        android:paddingTop="@dimen/size_12p">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/size_10p"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="打包码:"
+                android:textSize="@dimen/font_text_size16"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:text="QMCS234513123"
+                android:textColor="@color/font_orange"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_text_size16"
+                android:layout_marginLeft="@dimen/size_10p"/>
+        </LinearLayout>
+        <View
+            style="@style/dotted_style"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/size_6p"
+            android:paddingBottom="@dimen/size_6p"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="送至："
+                android:textSize="@dimen/font_text_size14"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="重庆观音桥街网点"
+                android:textSize="@dimen/font_text_size14"
+                android:singleLine="true"
+                android:textColor="@color/font_gray"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:text="状态：快件正在发放中"
+            android:textSize="@dimen/font_text_size14"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="-1dp"
+        />
+</LinearLayout>

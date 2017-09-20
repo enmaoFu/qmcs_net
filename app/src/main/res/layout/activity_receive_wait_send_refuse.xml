@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <include layout="@layout/toolbar_white_layout"></include>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/select_refuse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_round4"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_8p">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拒收原因"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_black333"
+            android:paddingTop="@dimen/size_18p"
+            android:paddingBottom="@dimen/size_18p"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/size_12p"/>
+
+        <TextView
+            android:id="@+id/select_refuse_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择拒收原因"
+            android:layout_toRightOf="@+id/msg"
+            android:drawableRight="@drawable/post_arrow_down"
+            android:drawablePadding="@dimen/size_5p"
+            android:textSize="@dimen/font_text_size16"
+            android:textColor="@color/font_gray"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/size_12p"
+            android:paddingTop="@dimen/size_5p"
+            android:paddingBottom="@dimen/size_5p"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"
+        android:layout_marginTop="@dimen/size_12p"
+        android:background="@drawable/item_send_send_round"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/size_12p"
+        android:paddingRight="@dimen/size_12p">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12p">
+
+            <TextView
+                android:id="@+id/uploda_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传照片"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size14"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uploda_photo"
+                android:layout_marginTop="@dimen/size_6p"
+                android:gravity="bottom">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:scrollbars="none">
+
+                    <com.and.yzy.frame.view.linearlistview.LinearListView
+                        android:id="@+id/lv_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    </com.and.yzy.frame.view.linearlistview.LinearListView>
+
+
+                </HorizontalScrollView>
+
+
+                <ImageView
+                    android:id="@+id/add_pic"
+                    android:layout_width="@dimen/size_48p"
+                    android:layout_height="@dimen/size_48p"
+                    android:layout_marginTop="@dimen/size_9p"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_uploadpict"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10p"
+                    android:text="最多四张"
+                    android:id="@+id/tv_tip"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_text_size12"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20p"
+            android:paddingBottom="@dimen/size_12p">
+
+            <TextView
+                android:id="@+id/packing_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拒收描述"
+                android:textColor="@color/font_black333"
+                android:textSize="@dimen/font_text_size14"/>
+
+            <EditText
+                android:id="@+id/describe"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/size_10p"
+                android:layout_toRightOf="@id/packing_describe"
+                android:background="@drawable/edit_bg"
+                android:gravity="left"
+                android:hint="添加文字说明（限30字）"
+                android:maxLength="30"
+                android:padding="@dimen/size_10p"
+                android:textColor="@color/font_gray"
+                android:textColorHint="@color/font_hint"
+                android:textSize="@dimen/font_text_size14"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/bg_shadow"
+        android:layout_marginTop="-1dp"
+        android:layout_marginLeft="@dimen/size_12p"
+        android:layout_marginRight="@dimen/size_12p"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/size_12p"
+        android:id="@+id/Rl_commit"
+        android:layout_height="50dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/btn_progress"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交申请"
+            android:id="@+id/tv_progress"
+            android:textSize="@dimen/size_16p"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
